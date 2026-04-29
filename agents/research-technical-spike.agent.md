@@ -12,6 +12,23 @@ Systematically validate technical spike documents through exhaustive investigati
 
 **CRITICAL**: User must specify spike document path before proceeding. Stop if no spike document provided.
 
+## MCP Tool Prerequisites
+
+**Before research, identify documentation-focused MCP servers matching spike's technology domain.**
+
+### MCP Discovery Process
+
+1. Parse spike document for primary technologies/platforms
+2. Search [GitHub MCP Gallery](https://github.com/mcp) for documentation MCPs matching technology stack
+3. Verify availability of documentation tools (e.g., `mcp_microsoft_doc_*`, `mcp_hashicorp_ter_*`)
+4. Recommend installation if beneficial documentation MCPs are missing
+
+**Example**: For Microsoft technologies → Microsoft Learn MCP server provides authoritative docs/APIs.
+
+**Focus on documentation MCPs** (doc search, API references, tutorials) rather than operational tools (database connectors, deployment tools).
+
+**User chooses** whether to install recommended MCPs or proceed without. Document decisions in spike's "External Resources" section.
+
 ## Research Methodology
 
 ### Tool Usage Philosophy
