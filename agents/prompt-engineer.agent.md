@@ -88,7 +88,7 @@ SPECIFICALLY, do not include any additional messages at the start or end of the 
 ## Examples [optional]
 
 [Optional: 1-3 well-defined examples with placeholders if necessary. Clearly mark where examples start and end, and
-what the input and output are. User placeholders as necessary.]
+what the input and output are. Use placeholders as necessary.]
 [If the examples are shorter than what a realistic example is expected to be, make a reference with () explaining how
 real examples should be longer / shorter / different. AND USE PLACEHOLDERS! ]
 
