@@ -3,10 +3,7 @@ title: '02 · Context and Conversations'
 description: 'Learn how to give Copilot CLI richer context and build stronger multi-turn conversations.'
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-03-20
----
-
-![Chapter 02: Context and Conversations](/images/learning-hub/copilot-cli-for-beginners/02/chapter-header.png)
+lastUpdated: 2026-06-12(/images/learning-hub/copilot-cli-for-beginners/02/chapter-header.png)
 
 > **What if AI could see your entire codebase, not just one file at a time?**
 
@@ -311,8 +308,14 @@ copilot --continue
 # Pick from a list of sessions interactively
 copilot --resume
 
+# -r is a shorthand for --resume (saves some typing!)
+copilot -r
+
 # Or resume a specific session by ID
-copilot --resume abc123
+copilot --resume=abc123
+
+# Or resume by the name you gave the session
+copilot --resume="my book app review"
 ```
 
 > 💡 **How do I find a session ID?** You don't need to memorize them. Running `copilot --resume` without an ID shows an interactive list of your previous sessions, their names, IDs, and when they were last active. Just pick the one you want.
@@ -410,7 +413,7 @@ No re-explaining. No re-reading files. Just continue working.
 
 ---
 
-**🎉 You now know the essentials!** The `@` syntax, session management (`--continue`/`--resume`/`/rename`), and context commands (`/context`/`/clear`) are enough to be highly productive. Everything below is optional. Return to it when you're ready.
+**🎉 You now know the essentials!** The `@` syntax, session management (`--name`/`--continue`/`--resume`/`/rename`), and context commands (`/context`/`/clear`) are enough to be highly productive. Everything below is optional. Return to it when you're ready.
 
 ---
 
@@ -853,10 +856,11 @@ copilot --add-dir /path/to/directory
 
 1. **`@` syntax** gives Copilot CLI context about files, directories, and images
 2. **Multi-turn conversations** build on each other as context accumulates
-3. **Sessions auto-save**: use `--continue` or `--resume` to pick up where you left off
-4. **Context windows** have limits: manage them with `/context`, `/clear`, and `/compact`
-5. **Permission flags** (`--add-dir`, `--allow-all`) control multi-directory access. Use them wisely!
-6. **Image references** (`@screenshot.png`) help debug UI issues visually
+3. **Sessions auto-save**: name them at startup with `--name`, resume by name with `--resume=<name>`, or use `--continue` to pick up the most recent session
+4. **Context windows** have limits: manage them with `/clear`, `/compact`, `/context`, `/new`, and `/rewind`. Use `/compact focus on <topic>` to shape what gets kept in the summary
+5. **Persistent memory** (`/memory`) lets Copilot CLI remember preferences and facts across *all* sessions — not just the current one
+6. **Permission flags** (`--add-dir`, `--allow-all`) control multi-directory access. Use them wisely!
+7. **Image references** (`@screenshot.png`) help debug UI issues visually
 
 > 📚 **Official Documentation**: [Use Copilot CLI](https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli) for the complete reference on context, sessions, and working with files.
 

@@ -3,10 +3,7 @@ title: '01 · First Steps'
 description: 'Experience your first GitHub Copilot CLI demos and learn the three main interaction modes.'
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-03-20
----
-
-![Chapter 01: First Steps](/images/learning-hub/copilot-cli-for-beginners/01/chapter-header.png)
+lastUpdated: 2026-06-12(/images/learning-hub/copilot-cli-for-beginners/01/chapter-header.png)
 
 > **Watch AI find bugs instantly, explain confusing code, and generate working scripts. Then learn three different ways to use GitHub Copilot CLI.**
 
@@ -438,14 +435,21 @@ That's it for getting started! As you become comfortable, you can explore additi
 | `/compact` | Summarize conversation to reduce context usage |
 | `/share` | Export session as markdown file or GitHub gist |
 
+### Display
+
+| Command | What It Does |
+|---------|--------------|
+| `/statusline` (or `/footer`) | Customize which items appear in the status bar at the bottom of the session (directory, branch, effort, context window, quota) |
+| `/theme` | View or set terminal theme |
+| `/voice` | Dictate your prompt using local speech-to-text — speak naturally instead of typing |
+
 ### Help and Feedback
 
 | Command | What It Does |
 |---------|--------------|
-| `/help` | Show all available commands |
 | `/changelog` | Display changelog for CLI versions |
 | `/feedback` | Submit feedback to GitHub |
-| `/theme` | View or set terminal theme |
+| `/help` | Show all available commands |
 
 ### Quick Shell Commands
 
